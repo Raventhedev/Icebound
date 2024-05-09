@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background-color: #021121;
+    height: 1750px;
+    width: 100%;
+}
+
+/* Header */
+
+.header {
+    position: absolute;
+    z-index: 1;
+    background-image: linear-gradient(to right, rgba(1,40,66,1), rgba(1,25,41,1));;
+    border: 3px solid #101010;
+    border-radius: 14px;
+    height: 220px;
+    width: 1300px;
+    margin-left: 280px;
+    margin-top: 45px;
+}
+
+#hlogo {
+   margin-left: 70px; 
+   margin-top: 42px;
+   transition: 0.4s;
+   border: 3px solid #095a92;
+   border-radius: 999px;
+   background-color: transparent;
+}
+
+#hlogo:hover {
+    opacity: 70%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#hice {
+    margin-left: 170px;
+    padding-top: 2px;
+}
+
+.header h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #014370;
+    opacity: 60%;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Lora", serif;
+}
+
+/* Picker */
+
+    .picker {
+        position: absolute;
+        top: 230px;
+        margin-left: 160px;
+        border: 0px solid #232323;
+        border-radius: 5px;
+        background-image: url(../limg/picker.png);
+        height: 1100px;
+        width: 1520px;
+    }
+
+
+    #pickerp {
+        font-family: "Lora", serif;
+        font-weight: 400;
+        font-size: 22px;
+        text-align: center;
+        opacity: 50%;
+        margin-top: 240px;  
+        color: #7595ab;
+    }
+
+/* Factions */
+
+.picker h1{
+    margin-top: 150px;
+    margin-left: 530px;
+    position: absolute;
+    color: #9cc6e3;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.picker #ph3{
+    margin-top: 210px;
+    margin-left: 625px;
+    position: absolute;
+    color: #606060;
+    font-family: Monaco, monospace;
+}
+
+.picker .factions {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.picker .factions #al {
+    transform: translateY(15px);
+    transition: 0.5s;
+}
+
+.picker .factions #ho {
+    transform: translateY(15px);
+    transition: 0.5s;
+}
+
+/* Factions animation */
+
+.picker .factions #al:hover {
+    transform: translateY(0px);
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 65%;
+}
+
+.picker .factions #ho:hover {
+    transform: translateY(0px);
+    transition: 0.5s;
+    cursor: pointer;    
+    opacity: 65%;
+}
+
+/* Death Knight */
+
+.dk-gui img {
+    transform: translateY(15px);
+    transition: 0.5s;
+    margin-top: 180px;
+    margin-left: 665px;
+}
+
+.dk-gui img:hover {
+    transform: translateY(0px);
+    transition: 0.5s;
+    cursor: pointer;    
+    opacity: 65%;
+}
+
+
+.dk-gui h3{
+    margin-top: 95px;
+    margin-left: 600px;
+    position: absolute;
+    color: #9cc6e3;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.dk-gui h5{
+    margin-top: 135px;
+    margin-left: 690px;
+    position: absolute;
+    color: #606060;
+    font-family: Monaco, monospace;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 1600px;
+    margin-left: 150px;
+    background-image: url(../limg/footer.png);
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 1550px;
+    border-radius: 5px;
+}
+
+.footer-txt {
+    margin-top: 25px;
+    margin-left: 70px;
+}
+
+.footer-txt h3 {
+    color: #014370;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-txt h5 {
+    color: #505050;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-txt p {
+    color: #343434;
+    font-family: Monaco, monospace;
+}
+
+/* Loader */
+
+.loader {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #021121;
+    transition: opacity 0.90s, visibility 0.90s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    border: 15px solid #021121;
+    border-top-color: #095a92;
+    border-radius: 50%;
+    animation: loading 1.5s ease infinite;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}

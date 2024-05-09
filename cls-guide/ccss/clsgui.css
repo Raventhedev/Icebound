@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background-color: #021121;
+    height: 1750px;
+    width: 100%;
+}
+
+/* Header */
+
+.header {
+    position: absolute;
+    z-index: 1;
+    background-image: linear-gradient(to right, rgba(1,40,66,1), rgba(1,25,41,1));;
+    border: 3px solid #101010;
+    border-radius: 14px;
+    height: 220px;
+    width: 1300px;
+    margin-left: 280px;
+    margin-top: 45px;
+}
+
+#hlogo {
+   margin-left: 70px; 
+   margin-top: 42px;
+   transition: 0.4s;
+   border: 3px solid #095a92;
+   border-radius: 999px;
+   background-color: transparent;
+}
+
+#hlogo:hover {
+    opacity: 70%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#hice {
+    margin-left: 170px;
+    padding-top: 2px;
+}
+
+.header h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #014370;
+    opacity: 60%;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Lora", serif;
+}
+
+/* Picker */
+
+.picker {
+    position: absolute;
+    top: 230px;
+    margin-left: 160px;
+    border: 0px solid #232323;
+    border-radius: 5px;
+    background-image: url(../cimg/picker.png);
+    height: 1100px;
+    width: 1520px;
+}
+
+.picker a {
+    color: inherit;
+}
+
+#ph1 {
+    font-family: "Josefin Sans", sans-serif;
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 250px;
+    color: #9cc6e3;
+}
+
+#ph3 {
+    color: #102952;
+    position: absolute;
+    margin-top: 880px;
+    margin-left: 740px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+}
+
+#ph2 {
+    color: #303030;
+    font-family: Monaco, monospace;
+    position: absolute;
+    margin-top: 940px;
+    margin-left: 330px;
+}
+
+#ph2 strong {
+    color: #014370;
+}
+
+/* Short Guide */
+
+.short {
+    transform: translateY(15px);
+    transition: 0.5s;
+    position: absolute;
+    background-image: url(../cimg/divblocks.png);
+    width: 290px;
+    height: 364px;
+    margin-left: 392px;
+    margin-top: 375px;
+}
+
+.short h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    position: absolute;
+    margin-top: 135px;
+    margin-left: 80px;
+}
+
+.short h3 {
+    font-family: "Josefin Sans", sans-serif;
+    position: absolute;
+    color: #313131;
+    margin-left: 100px;
+    margin-top: 180px;
+}
+
+/* Long Guide */
+
+.long {
+    transform: translateY(15px);
+    transition: 0.5s;
+    position: absolute;
+    background-image: url(../cimg/divblocks.png);
+    width: 290px;
+    height: 364px;
+    margin-left: 865px;
+    margin-top: 375px;
+}
+
+.long h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    position: absolute;
+    margin-top: 135px;
+    margin-left: 85px;
+}
+
+.long h3 {
+    font-family: "Josefin Sans", sans-serif;
+    position: absolute;
+    color: #313131;
+    margin-left: 100px;
+    margin-top: 180px;
+}
+
+/* DIV's animation */
+
+.long:hover {
+    opacity: 80%;
+    transform: translateY(0px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.short:hover {
+    opacity: 80%;
+    transform: translateY(0px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 1600px;
+    margin-left: 150px;
+    background-image: url(../cimg/footer.png);
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 1550px;
+    border-radius: 5px;
+}
+
+.footer-txt {
+    margin-top: 25px;
+    margin-left: 70px;
+}
+
+.footer-txt h3 {
+    color: #014370;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-txt h5 {
+    color: #505050;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-txt p {
+    color: #343434;
+    font-family: Monaco, monospace;
+}
+
+/* Loader */
+
+.loader {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #021121;
+    transition: opacity 0.90s, visibility 0.90s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    border: 15px solid #021121;
+    border-top-color: #095a92;
+    border-radius: 50%;
+    animation: loading 1.5s ease infinite;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}

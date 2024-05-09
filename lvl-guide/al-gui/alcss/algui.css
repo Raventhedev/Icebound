@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background-color: #021121;
+    height: 1250px;
+    width: 100%;
+}
+
+/* Header */
+
+.header {
+    position: absolute;
+    z-index: 1;
+    background-image: linear-gradient(to right, rgba(1,40,66,1), rgba(1,25,41,1));;
+    border: 3px solid #101010;
+    border-radius: 14px;
+    height: 220px;
+    width: 1300px;
+    margin-left: 280px;
+    margin-top: 45px;
+}
+
+#hlogo {
+   margin-left: 70px; 
+   margin-top: 42px;
+   transition: 0.4s;
+   border: 3px solid #095a92;
+   border-radius: 999px;
+   background-color: transparent;
+}
+
+#hlogo:hover {
+    opacity: 70%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#hice {
+    margin-left: 170px;
+    padding-top: 2px;
+}
+
+.header h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #014370;
+    opacity: 60%;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Lora", serif;
+}
+
+/* Picker */
+
+    .picker {
+        position: absolute;
+        top: 230px;
+        margin-left: 160px;
+        border: 0px solid #232323;
+        border-radius: 5px;
+        background-image: url(../alimg/picker.png);
+        height: 750px;
+        width: 1520px;
+    }
+
+/* Zones */
+
+.zones .azeroth {
+    transform: translateY(20px);
+    transition: 0.5s;
+    position: absolute;
+    background-image: url(../alimg/divblock.png);
+    width: 320px;
+    height: 400px;
+    margin-left: 140px;
+    margin-top: 192px;
+}
+
+.zones .outland {
+    transform: translateY(20px);
+    transition: 0.5s;
+    position: absolute;
+    background-image: url(../alimg/divblock.png);
+    width: 320px;
+    height: 400px;
+    margin-left: 610px;
+    margin-top: 192px;
+}
+
+.zones .northrend {
+    transform: translateY(20px);
+    transition: 0.5s;
+    position: absolute;
+    background-image: url(../alimg/divblock.png);
+    width: 320px;
+    height: 400px;
+    margin-left: 1080px;
+    margin-top: 192px;
+}
+
+
+/* Zones TXT */
+
+.zones h2 {
+    color: #9cc6e3;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+}
+
+#azer {
+    margin-top: 120px;
+    margin-left: 220px;
+    position: absolute;
+}
+
+#outl {
+    margin-top: 120px;
+    margin-left: 685px;
+    position: absolute;
+}
+
+#north {
+    margin-top: 120px;
+    margin-left: 1130px;
+    position: absolute;
+}
+
+/* Azeroth List */
+
+.zones .azeroth ul li {
+    padding: 3px;
+    font-family: Monaco, monospace;
+    color: #0e233a;
+    list-style: none;
+}
+
+.zones .azeroth ul li:hover {
+    opacity: 60%;
+    transition: 0.4s;
+}
+
+.zones .azeroth ul {
+    margin-top: 55px;
+    margin-left: 70px;
+}
+
+.zones .azeroth ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Outland list */
+
+.zones .outland ul li {
+    padding: 3px;
+    font-family: Monaco, monospace;
+    color: #0e233a;
+    list-style: none;
+    transition: 0.4s;
+}
+
+.zones .outland ul li:hover {
+    opacity: 60%;
+    transition: 0.4s;
+}
+
+.zones .outland ul {
+    margin-top: 120px;
+    margin-left: 22px;
+}
+
+.zones .outland ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Northrend List */
+
+.zones .northrend ul li {
+    padding: 3px;
+    font-family: Monaco, monospace;
+    color: #0e233a;
+    list-style: none;
+    transition: 0.4s; 
+}
+
+.zones .northrend ul li:hover {
+    opacity: 60%;
+    transition: 0.4s;
+}
+
+.zones .northrend ul {
+    margin-top: 93px;
+    margin-left: 35px;
+}
+
+.zones .northrend ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 1100px;
+    margin-left: 150px;
+    background-image: url(../alimg/footer.png);
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 1550px;
+    border-radius: 5px;
+}
+
+.footer-txt {
+    margin-top: 25px;
+    margin-left: 70px;
+}
+
+.footer-txt h3 {
+    color: #014370;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-txt h5 {
+    color: #505050;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-txt p {
+    color: #343434;
+    font-family: Monaco, monospace;
+}
+
+/* Loader */
+
+.loader {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #021121;
+    transition: opacity 0.90s, visibility 0.90s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    border: 15px solid #021121;
+    border-top-color: #095a92;
+    border-radius: 50%;
+    animation: loading 1.5s ease infinite;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}

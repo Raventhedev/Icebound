@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background-color: #021121;
+    height: 1750px;
+    width: 100%;
+}
+
+/* Header */
+
+.header {
+    position: absolute;
+    z-index: 1;
+    background-image: linear-gradient(to right, rgba(1,40,66,1), rgba(1,25,41,1));;
+    border: 3px solid #101010;
+    border-radius: 14px;
+    height: 220px;
+    width: 1300px;
+    margin-left: 280px;
+    margin-top: 45px;
+}
+
+#hlogo {
+   margin-left: 70px; 
+   margin-top: 42px;
+   transition: 0.4s;
+   border: 3px solid #095a92;
+   border-radius: 999px;
+   background-color: transparent;
+}
+
+#hlogo:hover {
+    opacity: 70%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#hice {
+    margin-left: 170px;
+    padding-top: 2px;
+}
+
+.header h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #014370;
+    opacity: 60%;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Lora", serif;
+}
+
+/* Picker */
+    #ph11{
+        margin-top: 150px;
+        margin-left: 480px;
+        position: absolute;
+        color: #9cc6e3;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    #ph31{
+        margin-top: 210px;
+        margin-left: 635px;
+        position: absolute;
+        color: #606060;
+        font-family: Monaco, monospace;
+    }
+
+    #ph12{
+        margin-top: 540px;
+        margin-left: 480px;
+        position: absolute;
+        color: #9cc6e3;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    #ph32{
+        margin-top: 600px;
+        margin-left: 610px;
+        position: absolute;
+        color: #606060;
+        font-family: Monaco, monospace;
+    }
+
+    .picker {
+        position: absolute;
+        top: 230px;
+        margin-left: 160px;
+        border: 0px solid #232323;
+        border-radius: 5px;
+        background-image: url(../pimg/picker.png);
+        height: 1100px;
+        width: 1520px;
+    }
+
+/* Professions */
+
+.picker .professions-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 270px;
+}
+
+.picker .professions-1 img {
+    padding: 20px;
+    transition: 0.4s;
+}
+
+.picker .professions-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.picker .professions-2 img {
+    padding: 20px;
+    transition: 0.4s;
+}
+
+.picker .professions-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 175px;
+}
+
+.picker .professions-3 img {
+    padding: 20px;
+    transition: 0.4s;
+}
+
+/* Professions animations */
+
+.picker .professions-1 img:hover {
+    opacity: 40%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.picker .professions-2 img:hover {
+    opacity: 40%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.picker .professions-3 img:hover {
+    opacity: 40%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+/* Recommendation */
+
+#rech1 {
+    font-family: "Josefin Sans", sans-serif;
+    color: #9cc6e3;
+    margin-top: 880px;
+    margin-left: 195px;
+    position: absolute;
+}
+    
+#recp1 {
+    width: 500px;
+    font-family: Monaco, monospace;
+    position: absolute;
+    margin-left: 195px;
+    margin-top: 920px;
+    color: #606060;
+}
+#recp1 strong {
+    color: #014370;
+}
+
+#rech2 {
+    font-family: Monaco, monospace;
+    color: #095a92;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 17px;
+}
+
+.recclass {
+    transition: 0.5s;
+    position: absolute;
+    margin-left: 890px;
+    margin-top: 940px;
+    background-color: #021330;
+    border: 0px solid black;
+    border-radius: 30px;
+    width: 310px;
+    height: 70px;
+}
+
+.recclass:hover {
+    transition: 0.5s;
+    background-color: #062963;
+    color: #5a89d6;
+    cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 1600px;
+    margin-left: 150px;
+    background-image: url(../pimg/footer.png);
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 1550px;
+    border-radius: 5px;
+}
+
+.footer-txt {
+    margin-top: 25px;
+    margin-left: 70px;
+}
+
+.footer-txt h3 {
+    color: #014370;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-txt h5 {
+    color: #505050;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-txt p {
+    color: #343434;
+    font-family: Monaco, monospace;
+}
+
+/* Loader */
+
+.loader {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #021121;
+    transition: opacity 0.90s, visibility 0.90s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    border: 15px solid #021121;
+    border-top-color: #095a92;
+    border-radius: 50%;
+    animation: loading 1.5s ease infinite;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
