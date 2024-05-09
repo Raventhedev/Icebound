@@ -1,1 +1,454 @@
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background-color: #021121;
+    height: 2450px;
+    width: 100%;
+}
+
+/* Header */
+
+.header {
+    position: absolute;
+    z-index: 1;
+    background-image: linear-gradient(to right, rgba(1,40,66,1), rgba(1,25,41,1));;
+    border: 3px solid #101010;
+    border-radius: 14px;
+    height: 220px;
+    width: 1300px;
+    margin-left: 280px;
+    margin-top: 45px;
+}
+
+#hlogo {
+   margin-left: 70px; 
+   margin-top: 42px;
+   transition: 0.4s;
+   border: 3px solid #095a92;
+   border-radius: 999px;
+   background-color: transparent;
+}
+
+#hlogo:hover {
+    opacity: 70%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#hice {
+    margin-left: 170px;
+    padding-top: 2px;
+}
+
+.header h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #014370;
+    opacity: 60%;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Lora", serif;
+}
+
+/* Picker */
+
+    .picker {
+        position: absolute;
+        top: 230px;
+        margin-left: 160px;
+        border: 0px solid #232323;
+        border-radius: 5px;
+        background-image: url(../img/picker.png);
+        height: 1500px;
+        width: 1520px;
+    }
+
+    .picker h2  {   
+        margin-left: 695px;
+        margin-top: 200px;
+        position: absolute;
+        color: #9cc6e3;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 800;
+    }
+
+    #pickerp {
+        font-family: "Lora", serif;
+        font-weight: 400;
+        font-size: 22px;
+        text-align: center;
+        opacity: 50%;
+        margin-top: 240px;  
+        color: #7595ab;
+    }
+
+    /* Guide DIVs */
+
+    .floating-divs a {
+        color: inherit;
+    }
+
+    #lgui {
+        transform: translateY(15px);
+        transition: 0.5s;
+        position: absolute;
+        margin-top: 90px;
+        margin-left: 180px;
+        background-image: url(../img/guioverlay.png);
+        height: 350px;
+        width: 270px;
+        cursor: pointer;
+    }
+
+    #pgui {
+        transform: translateY(15px);
+        transition: 0.5s;
+        position: absolute;
+        margin-top: 90px;
+        margin-left: 630px;
+        background-image: url(../img/guioverlay.png);
+        height: 350px;
+        width: 270px;
+        cursor: pointer;
+    }
+
+    #cgui {
+        transform: translateY(15px);
+        transition: 0.5s;
+        position: absolute;
+        margin-top: 90px;
+        margin-left: 1095px;
+        background-image: url(../img/guioverlay.png);
+        height: 350px;
+        width: 270px;
+        cursor: pointer;
+    }
+
+    /* Guide DIVs animation */
+    
+    #lgui:hover {
+        color: #707070;
+        opacity: 80%;
+        transform: translateY(0px);
+        transition: 0.5s;
+    }
+        
+    #pgui:hover {
+        color: #707070;
+        opacity: 80%;
+        transform: translateY(0px);
+        transition: 0.5s;
+    }
+        
+    #cgui:hover {
+        color: #707070;
+        opacity: 80%;
+        transform: translateY(0px);
+        transition: 0.5s;   
+    }
+    
+        /* Leveling Guide TXT */
+
+        #lgui h3 {
+            font-weight: 900;
+            font-size: 32px;
+            margin-top: 143px;
+            text-align: center;
+        }
+
+        #lgui p {
+            font-size: 26px;
+            position: absolute;
+            top: 188px;
+            left: 95px;
+            font-family: "Josefin Sans", sans-serif;
+        }  
+
+        /* Proffesion Guide TXT */
+
+        #pgui h3 {
+            font-weight: 900;
+            font-size: 32px;
+            margin-top: 143px;
+            text-align: center;
+        }
+
+        #pgui p {
+            font-size: 26px;
+            position: absolute;
+            top: 188px;
+            left: 95px;
+            font-family: "Josefin Sans", sans-serif;
+        }  
+
+        /* Class Guide TXT */
+
+        #cgui h3 {
+            font-weight: 900;
+            font-size: 32px;
+            margin-top: 143px;
+            text-align: center;
+        }
+
+        #cgui p {
+            font-size: 26px;
+            position: absolute;
+            top: 188px;
+            left: 95px;
+            font-family: "Josefin Sans", sans-serif;
+        }  
+
+    /* Addons */
+
+    .addons h2 {
+        margin-left: 695px;
+        margin-top: 600px;
+        position: absolute;
+        color: #9cc6e3;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 800;
+    }
+
+    .addons h3 {
+        margin-left: 130px;
+        margin-top: 670px;
+        position: absolute;
+        color: #5b7384;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 600;
+    }
+
+    .addons h4 {
+        margin-left: 400px;
+        margin-top: 725px;
+        position: absolute;
+        color: #36454f;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 600;
+    }
+
+    .addons p {
+        color: #404040;
+        width: 400px;
+        margin-left: 400px;
+        margin-top: 780px;
+        position: absolute;
+    }
+
+    .addons strong {
+        color: #366484;
+    }
+
+    .addons ul {
+        margin-left: 120px;
+        margin-top: 730px;
+        position: absolute;
+        color: #707070;
+        font-family: Monaco, monospace;
+    }
+
+    .addons ul li {
+        transform: translateX(0px);
+        transition: 0.4s;
+    }
+
+    .addons ul li:hover {
+        transform: translateX(7px);
+        opacity: 55%;
+        transition: 0.4s;
+    }
+
+    .addons ul a {
+        color: inherit;
+        text-decoration: none;
+    }
+/* Server Recommendation */
+
+    /* Warmane Icon */
+
+    .server-rec h2 {
+        position: absolute;
+        margin-top: 1780px;
+        margin-left: 585px;
+        font-family: "Josefin Sans", sans-serif;
+        color: #4383b5;
+    }
+
+    .server-rec .warmane img {
+        position: absolute;
+        margin-top: 1935px;
+        margin-left: 190px;
+        border: 4px solid #232323;
+        border-radius: 999px;
+        transition: 0.4s;
+    }
+
+    #htxt{
+        background:rgba(0,0,0,0.6);
+        height: 228px;
+        width: 228px;
+        border: 4px solid #232323;
+        border-radius: 999px;
+        position: absolute;
+        margin-top: 1935px;
+        margin-left: 190px;
+        opacity: 0%;
+        transition: 0.4s;
+    }
+
+    #htxt p {
+        font-family: "Lora", serif;
+        font-weight: 800;
+        font-size: 22px;
+        color: #606060;
+        margin-top: 100px;
+        margin-left: 25px;
+    }
+
+    #htxt:hover {
+        opacity: 80%;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+
+/* TXT (Description) */
+
+.server-rec .warmane h3 {
+    position: absolute;
+    margin-top: 1970px;
+    margin-left: 470px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+    color: #2c1408;
+}
+
+.server-rec .warmane p {
+    width: 770px;
+    position: absolute;
+    margin-top: 2020px;
+    margin-left: 475px;
+    color: #505050;
+    font-family: Monaco, monospace;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 2300px;
+    margin-left: 150px;
+    background-image: url(../img/footer.png);
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 1550px;
+    border-radius: 5px;
+}
+
+.footer-txt {
+    margin-top: 25px;
+    margin-left: 70px;
+}
+
+.footer-txt h3 {
+    color: #014370;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-txt h5 {
+    color: #505050;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-txt p {
+    color: #343434;
+    font-family: Monaco, monospace;
+}
+
+/* Loader */
+
+.loader {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #021121;
+    transition: opacity 0.90s, visibility 0.90s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    border: 15px solid #021121;
+    border-top-color: #095a92;
+    border-radius: 50%;
+    animation: loading 1.5s ease infinite;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
